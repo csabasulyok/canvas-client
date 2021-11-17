@@ -15,5 +15,5 @@ export class CanvasApi extends CanvasApiBase {
 /**
  * Default instance
  */
-const canvas = new CanvasApi();
-export default canvas;
+const canvasApi = new CanvasApi();
+export default canvasApi;

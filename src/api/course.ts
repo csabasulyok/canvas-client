@@ -1,4 +1,5 @@
 import * as dto from '../dto';
+import { AssignmentApi, AssignmentsApi } from './assignment';
 import CanvasApiBase from './base';
 
 /**
@@ -31,6 +32,18 @@ export class CourseApi extends CanvasApiBase {
       }
       throw error;
     }
+  }
+
+  /**
+   * Sub
+   */
+
+  assignments(): AssignmentsApi {
+    return new AssignmentsApi(this.courseId);
+  }
+
+  assignment(assignmentId: number): AssignmentApi {
+    return new AssignmentApi(this.courseId, assignmentId);
   }
 }
 
