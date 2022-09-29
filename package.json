@@ -30,9 +30,9 @@
   "dependencies": {
     "auto-bind": "4.0.0",
     "axios": "0.27.2",
-    "axios-form-data": "1.1.0",
+    "axios-form-data": "1.1.1",
     "extol": "1.2.3",
-    "yall2": "1.2.1"
+    "yall2": "1.2.2"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
